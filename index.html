@@ -1,8 +1,8 @@
 <!--
 Requirements
-[  ] Two Different Headlines
-[  ] Bold and Italic Text
-[  ] One List
+[yes] Two Different Headlines
+[yes] Bold and Italic Text
+[yes] One List
 [  ] Three Images
 
 Select ONE Additional Feature to Add  
@@ -10,17 +10,148 @@ Select ONE Additional Feature to Add
 [ no ] Feature 2 - Include <font> tag
 [ no ] Feature 3 - Include Underline & Highlight
 [ no ] Feature 4 - Use Square Bullets
-[ no ] Feature 5 - Include a list within a list
+[yes] Feature 5 - Include a list within a list
 -->
     
 <!DOCTYPE HTML>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Unit 1 Project</title>
-    </head>
-    <body>
+<html lang="en">
+<head>
+<title>Portfolio Website Coding Project</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        
-    </body>
+body {
+  font-family: garamond, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #ac1d1d;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: beige;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #aba292;
+  padding: 21px;
+  
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 140px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>X.G.C</h2>
+</header>
+
+<section>
+  <nav>
+<img src="https://cdn.glitch.global/b0f6f681-cd9c-4033-8326-1acf52ee853d/LUKAS%20PORTRAIT.jpg?v=1727281928826"
+     alt="Portrait of Lukas"
+     width="215">
+    <p> 
+      <em><u>Portrait of Luke </u>- 2024 16x24 in.</em>
+    </p>
+    <img src="https://cdn.glitch.global/b0f6f681-cd9c-4033-8326-1acf52ee853d/20240925_195155.jpg?v=1727310431033"
+     alt="Remberandt ear mastercopy"
+     width="215">
+    <p> 
+      <em><u>Remberandt Ear Mastercopy </u>- 2024 5x7 in.</em>
+    </p>
+    <img src="https://cdn.glitch.global/b0f6f681-cd9c-4033-8326-1acf52ee853d/oil%20painting.jpg?v=1727310429055"
+     alt="Still Life "
+     width="215">
+    <p> 
+      <em><u>Still Life on Linen</u>- 2022 16x18 in.</em>
+      
+    </p>
+  </nav>
+  
+  <article>
+    <h1><font size="+3">ABOUT </font></h1>
+    <p>Based in NYC, Ximena has had a passion for the arts since her youth expirementing in instruments and art. After soon 
+      dropping the trumpet she began to dedicate herself to painting and drawing inspired by the renisance painters and other painters that came before her she specializes in traditional oil painting methods and drawing methods
+      Below is a list of art mediums she specializes in as well as preparatory grounds for works she is able to do
+    </p>
+    <ol>
+      <li>Oil paint</li>
+      <li>Graphite pencil</li>
+      <li>Charcoal</li>
+      <li>Watercolor</li>
+      <li>Acrylic</li>
+      <ul>
+        <li>Hand preppared paper for drawings</li>
+        <li>Hand prepared oil and acrylic ground</li>
+      </ul>
+    </ol>
+    <p>Please note most oil paintings on linen have been hand stretched and prepared with handmade oil ground.</p>
+    <h1>
+      EDUCATION
+    </h1>
+    <p>
+      <u>Grand Central Atelier</u> - <em>July 2023 Summer Workshop, July 2024 Summer Workshop,August 2024 Summer Workshop</em>
+      <br> <u>Art Student Leauge</u> - <em>Aspring Artist Program October 2023- May 2024</em> <br>
+      <u>Parsons School of Design</u> - <em>September 2022 - Present</em>
+    </p>
+    <p>
+      Ximena has experience in painting and drawing animals, still lifes, landscapes and figurative work. She prefers to work from observation when possible.
+    </p>
+  </article>
+</section>
+
+<footer>
+  <p><strong>For any inquires</strong> <br>
+  <strong>Email -</strong> <em>ximenag10@nycstudents.net</em></p>
+  
+</footer>
+
+</body>
 </html>
